@@ -20,7 +20,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="container bg-1">
 								<!-- Navbar -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
@@ -45,6 +45,8 @@
 
 								<!--Main Body -->
 <div class="container-fluid bg-2">
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
   <div class="jumbotron">
     <h1>Current Courses </h1>
     <div class="panel-group" id="accordion" role="listitem" aria-multiselectable="true">
@@ -63,9 +65,9 @@
 	</div> <!-- Panel Heading -->
 	<div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="course1">
 	  <div class="panel-body courses">
-	    <div>Professor: Dr. H Timorabadi</div>
-	    <div>Course Details: A continuation of CPS 213. Memory; CPU architecture and instruction set; the instruction processing sequence; generic assembler level programming illustrated for specific CPUs; I/O essentials including interrupts and DMA; characteristics of major peripherals interfaces; RISC and CISC architectures compared; parallel processing. The laboratory requires using a specific assembler/editor for the creation of programs illustrating some of the principles discussed in lectures.</div>
-	    <div>Course Link: <a href="https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/310/" title="Computer Organization II" target="_blank" style="word-wrap: break-word;">https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/310/</a></div>
+	    <div><b>Professor</b>: Dr. H Timorabadi</div> </br>
+	    <div><b>Course Details</b>: A continuation of CPS 213. Memory; CPU architecture and instruction set; the instruction processing sequence; generic assembler level programming illustrated for specific CPUs; I/O essentials including interrupts and DMA; characteristics of major peripherals interfaces; RISC and CISC architectures compared; parallel processing. The laboratory requires using a specific assembler/editor for the creation of programs illustrating some of the principles discussed in lectures.</div> </br>
+	    <div><b>Course Link</b>: <a href="https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/310/" title="Computer Organization II" target="_blank" style="word-wrap: break-word;">https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/310/</a></div>
 	  </div> <!-- Panel Body -->
 	</div> <!-- Panel Collapse -->
       </div> <!-- Panel -->
@@ -84,9 +86,9 @@
 	</div> <!-- Panel Heading -->
 	<div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="course2">
 	  <div class="panel-body courses">
-	    <div>Professor: Dr. D Woit</div>
-	    <div>Course Details: Introduction to O/S (system calls, interrupts, synchronous and asynchronous traps, O/S structure), using processes (process communication and synchronization), primitive communications (signals and signal management calls), pipes, messages, semaphores, shared memory, memory management, file systems, and (time permitting) remote procedure calls.</div>
-	    <div>Course Link: <a href="https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/590/" title="Operating Systems II" target="_blank" style="word-wrap: break-word;">https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/590/</a></div>
+	    <div><b>Professor</b>: Dr. D Woit</div> </br>
+	    <div><b>Course Details</b>: Introduction to O/S (system calls, interrupts, synchronous and asynchronous traps, O/S structure), using processes (process communication and synchronization), primitive communications (signals and signal management calls), pipes, messages, semaphores, shared memory, memory management, file systems, and (time permitting) remote procedure calls.</div> </br>
+	    <div><b>Course Link</b>: <a href="https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/590/" title="Operating Systems II" target="_blank" style="word-wrap: break-word;">https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/590/</a></div>
 	  </div> <!-- Panel Body -->
 	</div> <!-- Panel Collapse -->
       </div> <!-- Panel -->
@@ -105,9 +107,9 @@
 	</div> <!-- Panel Heading -->
 	<div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="course3">
 	  <div class="panel-body courses">
-	    <div>Professor: Dr. M Santos</div>
-	    <div>Course Details: This course introduces students to the theory of computation. Topics include: regular expressions and languages, finite state automata, context-free languages, pushdown automata, Turing machines, computability, and NP-completeness.</div>
-	    <div>Course Link: <a href="https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/615/" title="Theory of Computation" target="_blank" style="word-wrap: break-word;">https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/615/</a></div>
+	    <div><b>Professor</b>: Dr. M Santos</div> </br>
+	    <div><b>Course Details</b>: This course introduces students to the theory of computation. Topics include: regular expressions and languages, finite state automata, context-free languages, pushdown automata, Turing machines, computability, and NP-completeness.</div> </br>
+	    <div><b>Course Link</b>: <a href="https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/615/" title="Theory of Computation" target="_blank" style="word-wrap: break-word;">https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/615/</a></div>
 	  </div> <!-- Panel Body -->
 	</div> <!-- Panel Collapse -->
       </div> <!-- Panel -->
@@ -126,9 +128,9 @@
 	</div> <!-- Panel Heading -->
 	<div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="course4">
 	  <div class="panel-body courses">
-	    <div>Professor: Dr. S Quigley</div>
-	    <div>Course Details: Complexity analysis and order notations, recurrence equations, brute force, divide-and-conquer techniques and the master theorem, transform-and-conquer and problem reduction, greedy method, dynamic programming, the knapsack and travelling salesman problems, graph algorithms, text processing and pattern matching techniques, P, NP, and NP-complete classes.</div>
-	    <div>Course Link: <a href="https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/616/" title="Algorithms" target="_blank" style="word-wrap: break-word;">https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/616/</a></div>
+	    <div><b>Professor</b>: Dr. S Quigley</div></br>
+	    <div><b>Course Details</b>: Complexity analysis and order notations, recurrence equations, brute force, divide-and-conquer techniques and the master theorem, transform-and-conquer and problem reduction, greedy method, dynamic programming, the knapsack and travelling salesman problems, graph algorithms, text processing and pattern matching techniques, P, NP, and NP-complete classes.</div> </br>
+	    <div><b>Course Link</b>: <a href="https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/616/" title="Algorithms" target="_blank" style="word-wrap: break-word;">https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/616/</a></div>
 	  </div> <!-- Panel Body -->
 	</div> <!-- Panel Collapse -->
       </div> <!-- Panel -->
@@ -147,9 +149,9 @@
 	</div> <!--Panel Heading -->
 	<div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="course5">
 	  <div class="panel-body courses">
-	    <div>Professor: Dr. C Ding</div>
-	    <div>Course Details: This course introduces the basic data mining concepts, methods, implementations, as well as applications in different areas, especially on the world wide web. Topics covered include the basic data mining techniques, data preprocessing, association rule mining, classification, clustering, web mining, and data mining application (e.g. in web personalization, recommender system, security). At the end of this course, students should be able to implement and use some of important data mining algorithms in practical applications.</div>
-	    <div>Course Link: <a href="https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/844/" title="Data Mining" target="_blank" style="word-wrap: break-word;">https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/844/</a></div>
+	    <div><b>Professor</b>: Dr. C Ding</div></br>
+	    <div><b>Course Details</b>: This course introduces the basic data mining concepts, methods, implementations, as well as applications in different areas, especially on the world wide web. Topics covered include the basic data mining techniques, data preprocessing, association rule mining, classification, clustering, web mining, and data mining application (e.g. in web personalization, recommender system, security). At the end of this course, students should be able to implement and use some of important data mining algorithms in practical applications.</div> </br>
+	    <div><b>Course Link</b>: <a href="https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/844/" title="Data Mining" target="_blank" style="word-wrap: break-word;">https://www.ryerson.ca/calendar/2017-2018/courses/computer-science/CPS/844/</a></div>
 	  </div> <!-- Panel Body -->
 	</div> <!-- Panel Collapse -->
       </div> <!-- Panel -->
@@ -168,9 +170,9 @@
 	</div> <!-- Panel Heading -->
 	<div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="course6">
 	  <div class="panel-body courses">
-	    <div>Professor: Dr. S Stankovic</div>
-	    <div>Course Details: Recent advances in biomedical sciences have raised a host of ethical concerns involving the sanctity and quality of life, fairness, equality, and autonomy. New and revolutionary developments call for legislative reform and policies designed to keep research and its applications within appropriate boundaries. This course examines issues such as cloning, assisted reproduction, genetic screening, gene therapy, organ donation, and resource allocation within a framework of moral principles and contemporary debate. PHL 509 is not available for credit to students who choose PHL 302.</div>
-	    <div>Course Link: <a href="https://www.ryerson.ca/calendar/2017-2018/courses/philosophy/PHL/509/" title="Bioethics" target="_blank" style="word-wrap: break-word;">https://www.ryerson.ca/calendar/2017-2018/courses/philosophy/PHL/509/</a></div>
+	    <div><b>Professor:</b> Dr. S Stankovic</div> </br>
+	    <div><b>Course Details:</b> Recent advances in biomedical sciences have raised a host of ethical concerns involving the sanctity and quality of life, fairness, equality, and autonomy. New and revolutionary developments call for legislative reform and policies designed to keep research and its applications within appropriate boundaries. This course examines issues such as cloning, assisted reproduction, genetic screening, gene therapy, organ donation, and resource allocation within a framework of moral principles and contemporary debate. PHL 509 is not available for credit to students who choose PHL 302.</div> </br>
+	    <div><b>Course Link:</b> <a href="https://www.ryerson.ca/calendar/2017-2018/courses/philosophy/PHL/509/" title="Bioethics" target="_blank" style="word-wrap: break-word;">https://www.ryerson.ca/calendar/2017-2018/courses/philosophy/PHL/509/</a></div>
 	  </div> <!-- Panel Body -->
 	</div> <!-- Panel Collapse -->
       </div> <!-- Panel -->
@@ -178,9 +180,9 @@
     </div> <!-- Panel-Group  -->	
   </div> <!-- Jumbotron  -->
   </div> <!-- Container  -->
-
+</body>
 								<!--Footer -->
-<footer class="container text-center bg-f">
+<footer class="container-fluid text-center navbar-bottom bg-f">
     <div class="social-media col-xs-12">
       <a href="mailto:NoelKocheril@Gmail.com" title="Email: NoelKocheril@Gmail.com" class="fa fa-at"></a>
       <a href="https://www.github.com/NoelKocheril" title="Github" target="_blank" class="fa fa-github"></a>
@@ -188,7 +190,6 @@
     </div>
     <div class="bottom-bar col-xs-12">
       Noel Kocheril &copy 2018 | <a href="https://noelkocheril.github.io/sitemap.xml" target="_blank">Sitemap</a>
-  `  </div>
+    </div>
 </footer>
-</body>
 </html>

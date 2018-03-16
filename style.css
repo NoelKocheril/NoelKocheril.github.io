@@ -1,17 +1,15 @@
 * {box-sizing: border-box;}
 
+footer.container-fluid {
+  padding: 0px;
+}
+
 .container-fluid {
   padding-top: 90px;
-  padding-bottom: 70px;
+  padding-bottom: 75px;
 }
 
 /*Footer */
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
 .bg-f {
   background-color: grey;
   color: black;
@@ -33,9 +31,12 @@
 }
 
 /*Body*/
+.bg-1 {
+  background-color: #666;
+}
 
 .bg-2 {
-  background-color: #eee;
+  background-color: #999;
   color: black;
   font-size: 17px;
   line-height: 20px;
@@ -104,4 +105,23 @@ a[aria-expanded=false] .glyphicon-minus {
   border-top-color: #EEEEEE;
 }
 
+/* Top Button */
+#back-to-top {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 0px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: grey;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 18px;
+}
 
+#back-to-top:hover {
+  background-color: #555;
+}
