@@ -1,0 +1,112 @@
+* {box-sizing: border-box;}
+
+.container-fluid {
+  padding-top: 90px;
+  padding-bottom: 70px;
+}
+
+/*Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer.container-fluid {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.bg-f {
+  background-color: grey;
+  color: black;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.bg-f a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.bg-f a:hover {
+  color: #ddd;
+  opacity: 0.7;
+}
+
+/*Body*/
+
+.bg-2 {
+  background-color: #eee;
+  color: black;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.panel-group .panel {
+  border-radius: 0;
+  box-shadow: none;
+  border-color: #CCCCCC;
+}
+
+.panel-default > .panel-heading {
+  padding: 0;
+  border-radius: 0;
+  color: #212121;
+  background-color: #FAFAFA;
+  border-color: #EEEEEE;
+  text-align: left;
+}
+
+.panel-body {
+  border-radius: 0;
+  color: #212121;
+  background-color: #FAFAFA;
+  text-align: left;
+}
+
+.panel-title {
+  font-size: 14px;
+}
+
+.panel-title > a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.panel-title > a:hover {
+  opacity: 0.7;
+}
+
+.more-less {
+  float: right;
+  color: #212121;
+}
+
+a.accordion-toggle[aria-expanded=true] .glyphicon-plus {
+   display: none;
+}
+
+
+a[aria-expanded=false] .glyphicon-minus {
+   display: none;
+}
+
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #EEEEEE;
+}
+
+
