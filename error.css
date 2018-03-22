@@ -264,7 +264,7 @@
 	   margin-bottom: 200px;
 	 }
 	 
-	 .button{
+	 .btn{
 	   border-radius: 4px;
 	   background-color: #11131a;
 	   border: none;
@@ -277,29 +277,31 @@
 	   cursor: pointer;
 	   margin: 5px;
 	 }
-	 .button span{
+	 .btn span{
 	   cursor: pointer;
 	   display: inline-block;
 	   position: relative;
-	   transition: 0.5s;
+	   transition: inherit;
 	 }
 	 
-	 .button span:after{
+	 .btn span:after{
 	   content: '\00bb';
 	   position: absolute;
-	   opacity: 0;
 	   top: 0;
 	   right: -20px;
-	   transition: 0.5s;
+	   transition: inherit;
 	 }
 	 
-	 .button:hover span {
+	 .btn:hover span {
        padding-right: 25px;
 	 }
 
-	 .button:hover span:after {
-	   opacity: 1;
+	 .btn:hover span:after {
        right: 0;
+	 }
+	 
+	 .btn-primary:hover {
+		 background-color: #31333a;
 	 }
 	 
 	 footer{
