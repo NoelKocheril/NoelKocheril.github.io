@@ -8,10 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NK Contact Info</title>
 
-  <!--My Scripts and CSS -->
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-
   <!--Icon Library for Social Media-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -20,6 +16,11 @@
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!--My Scripts and CSS -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="contact.js"></script>
 </head>
 <body class="container bg-1">
 								<!-- Navbar -->
@@ -46,24 +47,26 @@
 
 								<!-- Main Body -->
 <div class="container-fluid bg-2">
-	<form id="contact-form" method="post" action="contact.php" role="form">
-	
-	<div class="messages"></div>
+	<form name="contact-form" id="contact-form" enctype="text/plain" 
+	action="https://docs.google.com/forms/d/e/1FAIpQLSeJQ5TvTE0bVQW-Rq7qRcDQyiAi-OylnFdO2juAoOFDN0OL8w/formResponse?" 
+	target="hidden_iframe" onsubmit="submitted=true" role="form">
+	<!-- viewform?usp=pp_url&entry.2005620554=GarbageName&entry.337781024=GarbageNameLast&entry.1045781291=Garbage@Email.com&entry.1065046570=1234567890&entry.839337160=GarbageMessage -->
 	
 	<div class="controls">
 
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="form_name">First Name *</label>
-                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                    <label for="entry.2005620554">First Name*</label>
+                    <input id="entry.2005620554" name="entry.2005620554" type="text" class="form-control" placeholder="Please enter your First Name*" required="required" data-error="First Name is required.">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
+			
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="form_lastname">Last Name *</label>
-                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                    <label for="entry.337781024">Last Name*</label>
+                    <input id="entry.337781024" name="entry.337781024" type="text" class="form-control" placeholder="Please enter your Last Name*" required="required" data-error="Last Name is required.">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
@@ -71,15 +74,16 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="form_email">Email *</label>
-                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    <label for="entry.1045781291">E-mail*</label>
+                    <input id="entry.1045781291" type="email" name="entry.1045781291" class="form-control" placeholder="Please enter your E-mail*" required="required" data-error="Valid E-mail is required.">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
+			
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="form_phone">Phone</label>
-                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                    <label for="entry.1065046570">Phone Number</label>
+                    <input id="entry.1065046570" name="entry.1065046570" type="tel" class="form-control" placeholder="Please enter your Phone Number">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
@@ -87,13 +91,13 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label for="form_message">Message *</label>
-                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                    <label for="entry.839337160">Message*</label>
+                    <textarea id="entry.839337160" name="entry.839337160" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
             <div class="col-md-12">
-                <input type="submit" class="btn btn-success btn-send" value="Send message">
+                <input type="submit" class="btn btn-success btn-send" value="Submit">
             </div>
         </div>
         <div class="row">
@@ -105,6 +109,9 @@
 
 	
 	</form>
+	
+	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
 </div> <!-- Main Body-->
 </body>
 								<!-- Footer -->
