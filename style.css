@@ -38,7 +38,7 @@ footer.container-fluid {
 
 /*Body*/
 .bg-1 {
-  background-color: #0f603d;
+  background-color: #fff;
   -webkit-box-shadow:0 0 100px rgba(0,0,0,.8);
   box-shadow:0 0 100px rgba(0,0,0,.8);  
 }
@@ -51,7 +51,7 @@ footer.container-fluid {
 }
 
 .bg-3 {
-  background-color: #ff7214;
+  background-color: #000;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.8);
   box-shadow:inset 0 0 100px rgba(0,0,0,.8); 
 }
