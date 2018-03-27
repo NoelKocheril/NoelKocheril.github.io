@@ -1,0 +1,10 @@
+$(document).ready(function(){
+   $('.collapseAll').click(function(){
+       $('.panel-collapse')
+		.collapse('hide');
+    });
+    $('.expandAll').click(function(){
+	$('.panel-collapse')
+		.collapse('show');
+    });
+});
